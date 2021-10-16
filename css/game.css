@@ -1,0 +1,129 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+section.games {
+    margin: 30px auto 0px;
+    padding: 5px 0; 
+    
+}
+    section.games h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* GAMES */
+
+.container {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+        
+}
+    .container .box {
+        position: relative;
+        margin: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+    
+    }
+    .container .box .imgbox {
+        position: relative;
+        overflow: hidden;
+    
+    }
+    .container .box .imgbox img {
+        
+        width: 250px;
+        height: 350px;
+        max-width: 100%;
+        transition: transform 2s;   
+    }
+    .container .box:hover .imgbox img {
+        transform: scale(1.2);
+    }
+    .container .box .details {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.8);
+        transform: scaleY(0);
+        transition: transform .5s;
+    }
+    .container .box:hover .details{
+        transform: scaleY(1);
+    
+    }
+    .container .box .details .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+        color: #fff;
+    }
+    .container .box .details .content h2 {
+        margin: 0;  
+        padding: 0;
+        font-size: 20px;
+        color: red;
+    }
+
+    /* BUTTON */
+
+.button {
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: transparent;
+    cursor: pointer;
+   
+}
+    a.button{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .button:hover {
+        border: 1px solid red;
+        transition: 0.5s;
+        background: red;
+    
+    }
+footer {
+    background: rgb(224, 224, 224);
+}
+ .icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.footer-icon {
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+}
+@media screen and (max-width: 520px) {
+    .footer-icon {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 256px) {
+    .icons {
+        display: block;
+    }
+    
+}
+
+   

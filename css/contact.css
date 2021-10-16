@@ -1,0 +1,93 @@
+
+h1, h3 {
+    text-align: center;
+}
+
+form {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ height: 700px;
+
+}
+div input, .message{
+    
+    width: 80%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 15px;
+}
+div.name, .email, .phone, .message{
+    margin-top: 60px;
+}
+.message {
+    height: 100px;
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+        /* BUTTON */
+        
+button.btn {
+    text-align: center;
+    width: 100px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin-top: 30px;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid;
+    transition: 0.5s;
+    background: #353434;
+
+}
+footer {
+    background: rgb(224, 224, 224);
+}
+ .icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.footer-icon {
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    div input, .message {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    div input, .message {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .footer-icon {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 256px) {
+    .icons {
+        display: block;
+    }
+    
+}

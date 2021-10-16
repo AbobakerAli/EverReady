@@ -1,0 +1,121 @@
+* {
+    margin: 0; 
+    padding: 0;
+}
+section {
+    height: 100vh;
+    min-height: 800px;
+    background-image: url(./img.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+ul {
+    float: left;
+    list-style-type: none;
+    margin: 25px;
+}
+ul li {
+    display: inline;
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    font-size: 25px;
+
+}
+ul li a:hover {
+    background-color: red;
+    color: black;
+}
+.title {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+.title h1 {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    color: red;
+    border: 5px whitesmoke;
+    border-bottom-style: dotted;
+    border-right-style: dotted;
+    border-right-color: red;
+    border-bottom-color: red;    
+    border-top-style: dotted;
+    border-left-style: dotted;
+    font-size: 70px;
+    padding: 20px;
+    font-weight: bold;
+}
+.title h1 span {
+    color: white;
+}
+.title p {
+    color: white;
+    position: absolute;
+    top: 120%;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer {
+    background: #212529;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.footer-icon {
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 10px;
+}
+
+
+    /* SCREEN SIZES */ 
+
+    @media screen and (max-width: 1000px) {
+        section {   
+            height: 100vh;
+            min-height: 800px;
+            background: url(./hitman.png); 
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .title h1, .title p{
+            margin-left: 100px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .title h1, .title p{
+            margin-left: 200px;
+        }
+        .title h1 {
+            font-size: 40px;
+         }
+    }
+    @media screen and (max-width: 280px) {
+        .title h1, .title p{
+            margin-right: 100px;
+        }
+    }
+    @media screen and (max-width: 520px) {
+        .footer-icon {
+            padding: 0;
+        }
+    }
+    @media screen and (max-width: 256px) {
+        .icons {
+            display: block;
+        }
+        
+    }
