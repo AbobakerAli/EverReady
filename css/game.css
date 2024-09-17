@@ -16,7 +16,7 @@ section.games {
     /* GAMES */
 
 .container {
-    margin: 50px auto 0;
+    margin: 50px auto 100px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -27,6 +27,7 @@ section.games {
         position: relative;
         margin: 10px;
         box-sizing: border-box;
+        border: solid;
         display: inline-block;
     
     }
@@ -51,7 +52,7 @@ section.games {
         left: 10px;
         bottom: 10px;
         right: 10px;
-        background: rgba(0,0,0,0.8);
+        background: rgba(53, 52, 52, 0.8);
         transform: scaleY(0);
         transition: transform .5s;
     }
@@ -65,13 +66,74 @@ section.games {
         transform: translateY(-50%);
         text-align: center;
         padding: 15px;
-        color: #fff;
+        color: white;
     }
     .container .box .details .content h2 {
         margin: 0;  
         padding: 0;
         font-size: 20px;
+        background: -webkit-linear-gradient(#01b7ff, #2480d6);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+
+    }
+
+    section.extra {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        
+    }
+
+
+
+    .extra-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        padding: 50px;
+        margin: 30px;
+        border: 1px black solid;
+    }
+    .xx {
+
+        margin: 100px;
+    }
+    /* .extra-info {
+        position: absolute;
+
+        left: 20%;
+        transform: translate(-50%,-50%);
+    } */
+    .extra-info h1 {
+        /* border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
         color: red;
+        border-bottom-style: dotted;
+        border-right-style: dotted;
+        border-right-color: red;
+        border-bottom-color: red;    
+        border-top-style: dotted;
+        border-left-style: dotted;
+        margin: 50; */
+        margin: 40px;
+        padding: 20px;
+        font-size: 70px;
+        font-weight: bold;
+        }
+    .extra-info h1 span {
+        color: rgb(0, 0, 0);
+    }
+    .extra-info p {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: center;
+        margin: 50px;
     }
 
     /* BUTTON */
@@ -98,6 +160,7 @@ section.games {
         border: 1px solid red;
         transition: 0.5s;
         background: red;
+        color: white;
     
     }
 footer {

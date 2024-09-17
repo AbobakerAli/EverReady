@@ -2,12 +2,22 @@
     margin: 0; 
     padding: 0;
 }
-section {
+section.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     min-height: 800px;
-    background-image: url(./img.jpg);
+    /* background-image: url(./logo-icon.webp); */
     background-position: top center;
     background-repeat: no-repeat;
+}
+
+.main-logo {
+    height:500px;
+    width:500px;
+    object-fit: fill;
+    margin-left: 500px 
 }
 ul {
     float: left;
@@ -54,15 +64,73 @@ ul li a:hover {
     font-weight: bold;
 }
 .title h1 span {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .title p {
-    color: white;
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 120%;
     font-size: 20px;
     text-align: center;
 }
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 75%;
+    border: solid;
+    border-radius: 20px;
+    margin: 20px;
+}
+.about-us-disc {
+
+    margin: 50px;
+}
+div.carousel {
+    
+    width: 700px;
+    margin-right: 50px;
+
+}
+
+.styles-container {
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.styles-card {
+    
+    width: 500px;
+    border: solid black 2px ;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+button.content {
+
+    border-radius: 20px;
+    width: 100px;
+}
+
 
 footer {
     background: #212529;
@@ -79,6 +147,146 @@ footer {
     margin: 10px;
 }
 
+/* General Container Style */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* About Us Section */
+#about-us {
+    background-color: #f9f9f9;
+    padding: 70px 0; /* Increased padding for more space around sections */
+}
+
+#about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px; /* Increased margin below the heading */
+    color: #333;
+}
+
+/* Flexbox layout for each info-item */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px; /* Further increased margin for more space between sections */
+    gap: 60px; /* Increased gap between text and image */
+    padding: 30px; /* Added padding inside each item */
+    border: 2px solid #ddd; /* Border added around each item */
+    border-radius: 10px; /* Rounded corners for the border */
+    background: #fff; /* White background for better contrast with border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0; /* Initially hidden for animation */
+    transform: translateX(-100px); /* Start from left for animation */
+}
+
+.info-item .info-text {
+    flex: 1;
+    text-align: left;
+}
+
+.info-item .info-image {
+    flex: 1;
+}
+
+.info-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.info-item p {
+    font-size: 1.3em; /* Slightly larger font size */
+    color: #666;
+}
+
+.info-item:hover {
+    transform: scale(1.02);
+}
+
+.info-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Reversed layout for alternate items */
+.info-item.reversed {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/* Existing KO Pins Collection Styles */
+#ko-pins {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+#ko-pins .container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pin-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pin {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px; /* Increased padding for better spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    margin: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pin img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pin p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.details-button {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.pin:hover .details-button {
+    display: inline-block;
+}
+
 
     /* SCREEN SIZES */ 
 
@@ -86,7 +294,7 @@ footer {
         section {   
             height: 100vh;
             min-height: 800px;
-            background: url(./hitman.png); 
+            /* background: url(./hitman.png);  */
             background-position: top center;
             background-size: cover;
             background-repeat: no-repeat;
