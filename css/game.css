@@ -136,6 +136,14 @@ section.games {
         margin: 50px;
     }
 
+    section.threed-model {
+        margin: 100px;
+    }
+
+    canvas {
+        width: 50%;
+        height: 100vh;
+      }
     /* BUTTON */
 
 .button {

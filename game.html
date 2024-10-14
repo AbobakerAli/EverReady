@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gaming Site</title>
+    <title>EverReady</title>
     <link rel="stylesheet" href="./css/game.css" />
     <!-- CSS only -->
     <link
@@ -36,6 +36,7 @@
                 <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
+                <a class="nav-link" href="./aboutus.html">About us</a>
                 <a class="nav-link active" href="#">Products</a>
                 <a class="nav-link" href="./contact.html">Contact</a>
               </div>
@@ -67,7 +68,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -85,7 +86,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -103,7 +104,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -121,7 +122,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus.
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -139,7 +140,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -161,7 +162,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -179,7 +180,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -197,7 +198,7 @@
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Velit necessitatibus
                 </p>
-                <a class="button" href="./contact.html">Quote</a>
+                <a class="button" href="./contact.html">Details</a>
               </div>
             </div>
           </div>
@@ -227,6 +228,11 @@
             </p>
           </div>
           <img class="main-logo" src="./images/holes.jfif" alt="" />
+        </div>
+      </section>
+      <section class="threed-model">
+        <div>
+          <canvas id="canvas3d"></canvas>
         </div>
       </section>
       <footer>
@@ -264,5 +270,12 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script type="module">
+      import { Application } from "./node_modules/@splinetool/runtime/build/runtime.js";
+
+      const canvas = document.getElementById("canvas3d");
+      const app = new Application(canvas);
+      app.load("https://prod.spline.design/LsXZnIZuFX6gxc5e/scene.splinecode");
+    </script>
   </body>
 </html>
