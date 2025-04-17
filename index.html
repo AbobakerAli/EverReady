@@ -14,9 +14,21 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <meta
+      name="description"
+      content="EverReady Grinding & Manufacturing - Precision-manufactured pins, punches and grinding services"
+    />
+    <link rel="preload" href="./css/logo-icon.webp" as="image" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
@@ -41,15 +53,21 @@
                   >Home</a
                 >
                 <a class="nav-link" href="./aboutus.html">About us</a>
-                <a class="nav-link" href="./game.html">Products</a>
+                <a class="nav-link" href="./products.html">Products</a>
                 <a class="nav-link" href="./contact.html">Contact</a>
               </div>
             </div>
           </div>
         </nav>
       </header>
-      <section class="main">
-        <img class="main-logo" src="./css/logo-icon.webp" alt="" />
+      <section class="hero" aria-label="hero section">
+        <img
+          class="hero-logo"
+          src="./css/logo-icon.webp"
+          alt="EverReady Logo"
+          width="500"
+          height="500"
+        />
         <div class="title">
           <h1>EverReady <span>PIN</span></h1>
           <p>
@@ -185,7 +203,7 @@
                 class="pin-image"
               />
               <p>KO Pin Style 1</p>
-              <a href="./game.html" class="details-button">Details</a>
+              <a href="./products.html" class="details-button">Details</a>
             </div>
             <div class="pin hidden">
               <img
@@ -194,7 +212,7 @@
                 class="pin-image"
               />
               <p>KO Pin Style 2</p>
-              <a href="./game.html" class="details-button">Details</a>
+              <a href="./products.html" class="details-button">Details</a>
             </div>
             <div class="pin hidden">
               <img
@@ -203,7 +221,7 @@
                 class="pin-image"
               />
               <p>KO Pin Style 3</p>
-              <a href="./game.html" class="details-button">Details</a>
+              <a href="./products.html" class="details-button">Details</a>
             </div>
           </div>
         </div>
@@ -254,32 +272,77 @@
           </div>
         </div>
       </section> -->
-      <footer>
-        <div class="icons">
-          <a href="https://facebook.com/"
-            ><img
-              class="footer-icon"
-              src="./images/facebook.svg"
-              alt="facebook-brands"
-          /></a>
-          <a href="https://instagram.com/"
-            ><img
-              class="footer-icon"
-              src="./images/instagram.svg"
-              alt="instagram-brands"
-          /></a>
-          <a href="https://twitter.com/"
-            ><img
-              class="footer-icon"
-              src="./images/twitter.svg"
-              alt="twitter-brands"
-          /></a>
-          <a href="https://youtube.com/"
-            ><img
-              class="footer-icon"
-              src="./images/youtube.svg"
-              alt="youtube-brands"
-          /></a>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              EverReady Grinding & Manufacturing produces precision-manufactured
+              pins, punches and grinding services for the fastener industry
+              worldwide.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="footer-links">
+              <a href="./index.html">Home</a>
+              <a href="./aboutus.html">About Us</a>
+              <a href="./products.html">Products</a>
+              <a href="./contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Products</h3>
+            <div class="footer-links">
+              <a href="#">KO Pins</a>
+              <a href="#">Grinding Services</a>
+              <a href="#">Custom Solutions</a>
+              <a href="#">Precision Parts</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="footer-contact">
+              <p>📍 5560 international Drive, Rockford, IL</p>
+              <p>📞 (815) 874-4949</p>
+              <p>✉️ sales@everreadypin.com</p>
+            </div>
+            <div class="footer-social">
+              <a href="https://facebook.com/"
+                ><img
+                  class="footer-icon"
+                  src="./images/facebook.svg"
+                  alt="Facebook"
+              /></a>
+              <a href="https://instagram.com/"
+                ><img
+                  class="footer-icon"
+                  src="./images/instagram.svg"
+                  alt="Instagram"
+              /></a>
+              <a href="https://twitter.com/"
+                ><img
+                  class="footer-icon"
+                  src="./images/twitter.svg"
+                  alt="Twitter"
+              /></a>
+              <a href="https://youtube.com/"
+                ><img
+                  class="footer-icon"
+                  src="./images/youtube.svg"
+                  alt="YouTube"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 EverReady Grinding & Manufacturing. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>

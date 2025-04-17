@@ -75,7 +75,7 @@ section.games {
         background: -webkit-linear-gradient(#01b7ff, #2480d6);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
-
+        background-clip: text;
     }
 
     section.extra {
